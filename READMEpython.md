@@ -9,7 +9,7 @@ import requests
 
 app = FastAPI(title="NewsGuardAI - Misinformation Detection")
 
-# Load Hugging Face pipelines
+# Load pipeline
 text_classifier = pipeline("text-classification", model="bhadresh-savani/bert-base-uncased-emotion")
 summarizer = pipeline("summarization")
 zero_shot_classifier = pipeline("zero-shot-classification")
